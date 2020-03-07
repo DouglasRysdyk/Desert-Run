@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 78f1639a477254614b325291560d5739
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - player: {instanceID: 0}
+  - mainCanvas: {instanceID: 0}
+  - mainScoreDisplay: {instanceID: 0}
+  - gameOverCanvas: {instanceID: 0}
+  - gameOverScoreDisplay: {instanceID: 0}
+  - beatLevelCanvas: {instanceID: 0}
+  - backgroundMusic: {instanceID: 0}
+  - gameOverSFX: {instanceID: 0}
+  - beatLevelSFX: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
