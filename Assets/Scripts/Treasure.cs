@@ -8,16 +8,13 @@ public class Treasure : MonoBehaviour {
 	public GameObject player;
 	private PlayerController playerCtrl;
 
-	private void Start()
-	{
+	private void Start() {
 		playerCtrl = player.GetComponent<PlayerController>();
 	}
 
-	void OnTriggerEnter (Collider other)
-	{
+	void OnTriggerEnter (Collider other) {
 		if (other.gameObject.tag == "Player") {
-			if (GameManager.gm!=null)
-			{
+			if (GameManager.gm!=null) {
 				// tell the game manager to Collect
 				GameManager.gm.Collect (value);
 			}

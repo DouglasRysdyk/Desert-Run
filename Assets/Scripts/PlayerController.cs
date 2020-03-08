@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     public float speed = 10f;
     public Text scoreHolder;
-    public float health = 10f;
+    public float health = 3f;
 
     // Start is called before the first frame update
     void Start()

@@ -2,7 +2,6 @@
 using System.Collections;
 using UnityEngine.UI;
 
-
 public class GameManager : MonoBehaviour {
 
 	public static GameManager gm;
@@ -34,7 +33,7 @@ public class GameManager : MonoBehaviour {
 	private Health playerHealth;
 
 	void Start () {
-		if (gm == null) 
+		if (gm == null)
 			gm = gameObject.GetComponent<GameManager>();
 
 		if (player == null) {
@@ -64,7 +63,7 @@ public class GameManager : MonoBehaviour {
 					// set the end game score
 					gameOverScoreDisplay.text = mainScoreDisplay.text;
 
-					// switch which GUI is showing		
+					// switch which GUI is showing
 					mainCanvas.SetActive (false);
 					gameOverCanvas.SetActive (true);
 				} else if (canBeatLevel && score>=beatLevelScore) {
@@ -74,7 +73,7 @@ public class GameManager : MonoBehaviour {
 					// hide the player so game doesn't continue playing
 					player.SetActive(false);
 
-					// switch which GUI is showing			
+					// switch which GUI is showing
 					mainCanvas.SetActive (false);
 					beatLevelCanvas.SetActive (true);
 				}
@@ -91,7 +90,7 @@ public class GameManager : MonoBehaviour {
 				backgroundMusic.volume -= 0.01f;
 				if (backgroundMusic.volume<=0.0f) {
 					AudioSource.PlayClipAtPoint (beatLevelSFX,gameObject.transform.position);
-					
+
 					gameState = gameStates.GameOver;
 				}
 				break;
