@@ -32,6 +32,7 @@ public class Health : MonoBehaviour {
 		if (LevelToLoad=="") // default to current scene
 		{
 			SceneManager.LoadScene(LevelToLoad); //NEW
+			//SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Ideal but not working!
 			//LevelToLoad = Application.loadedLevelName;
 		}
 	}
